@@ -7,8 +7,6 @@ use GuzzleHttp\Psr7\Response;
 
 class Result implements ResultInterface
 {
-
-
     /**
      * Is valid
      *

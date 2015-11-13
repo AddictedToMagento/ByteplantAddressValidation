@@ -3,39 +3,34 @@
 namespace AddictedToMagento\ByteplantAddressValidation;
 
 use AddictedToMagento\AddressValidation\AddressInterface;
-use JMS\Serializer\Annotation\SerializedName;
-use JMS\Serializer\Annotation\Type;
 
 
 class Address implements AddressInterface
 {
     /**
-     * @SerializedName("StreetAddress")
-     * @Type("string")
      * @var string
      */
     protected $streetAddress;
 
     /**
-     * @SerializedName("City")
-     * @Type("string")
      * @var string
      */
     protected $city;
 
     /**
-     * @SerializedName("PostalCode")
-     * @Type("string")
      * @var string
      */
     protected $postcode;
 
     /**
-     * @SerializedName("PostalCode")
-     * @Type("string")
      * @var string
      */
     protected $countryIsoCode;
+
+    /**
+     * @var string
+     */
+    protected $locale = 'de';
 
     /**
      * Retrieve street address
